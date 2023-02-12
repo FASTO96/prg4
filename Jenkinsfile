@@ -37,7 +37,7 @@ environment{
 
         stage('edit depl') {
             steps {
-                sh "ansible-playbook apb.yaml --extra-vars 'v={$BUILD_NUMBER}'"
+                sh "ansible-playbook apb.yaml --extra-vars 'v=$BUILD_NUMBER'"
             }
         }
         
