@@ -10,7 +10,7 @@ environment{
     stages {
         stage('git') {
             steps {
-              scm checkout 
+             checkout  scm
             }
         }
         
