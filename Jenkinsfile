@@ -30,7 +30,7 @@ environment{
         
         stage('push') {
             steps {
-                sh 'docker push /sab22/prg4:$BUILD_NUMBER'
+                sh 'docker push sab22/prg4:$BUILD_NUMBER'
             }
         }
 
