@@ -6,7 +6,7 @@ include("conf.php");
 
 try{
     $dbc = new pdo ($tx,$userdb,$passdb);
-    echo 1;
+    echo 2;
 }
 
 
