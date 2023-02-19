@@ -1,7 +1,7 @@
 
 pipeline {
     agent {
-        label "myage"
+        label "myafe"
     }
 environment{
     DHC = credentials('dockerhub')
@@ -17,7 +17,7 @@ environment{
         
         stage('build') {
             steps {
-                sh 'docker build -t sab22/prg4:$BUILD_NUMBER .'
+                sh 'docker build -t sab22/php4:$BUILD_NUMBER .'
             }
         }        
 
@@ -30,7 +30,7 @@ environment{
         
         stage('push') {
             steps {
-                sh 'docker push sab22/prg4:$BUILD_NUMBER'
+                sh 'docker push sab22/php4:$BUILD_NUMBER'
             }
         }
 
